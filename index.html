@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ETIC CHECK</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <div class="App___Check">
+        <div class="nav">
+            <div class="title">
+                <p>Check<span>In</span></p>
+            </div>
+            <button onclick="quit()">Quit</button>  
+        </div>
+        <hr>
+        <div class="text">
+            <p>Welcome to <br><span>Training Camp X</span></p>
+        </div>
+        <div class="search">
+            <img src="Search.svg" >
+            <input type="text" placeholder="Search for a participant">
+            <button id="scan-button">Qr Code</button>
+        </div>
+        <table>
+            <thead>
+                <tr>
+                    <th>Nom</th>
+                    <th class="p" >Prénom</th>
+                    <th class="pr">Présent</th>
+                </tr>
+            </thead>
+            <tbody>
+                 <tr>
+                    <td>Bessalah</td>
+                    <td class="p">Anis</td>
+                    <td ><div class="ckeckbox" onclick="checkmark1()"><p id="checkmark1" class="mark">X</p></div></td>
+                    </tr>
+                 <tr>
+                    <td >Tiouti</td>
+                    <td class="p">Med</td>
+                    <td ><div class="ckeckbox" onclick="checkmark2()"><p id="checkmark2" class="mark">X</p></div></td>
+                 </tr>
+                 <tr>
+                    <td>Amieur</td>
+                    <td class="p">Imed Eddine </td>
+                    <td ><div class="ckeckbox" onclick="checkmark3()"><p id="checkmark3" class="mark">X</p></div></td>
+                 </tr>
+                 <tr>
+                    <td>Bessalah</td>
+                    <td class="p">Anis</td>
+                    <td ><div class="ckeckbox" onclick="checkmark4()"><p id="checkmark4" class="mark">X</p></div></td>
+                 </tr>
+                 <tr>
+                    <td>Tiouti</td>
+                    <td class="p">Med</td>
+                    <td ><div class="ckeckbox" onclick="checkmark5()"><p id="checkmark5" class="mark">X</p></div></td>
+                 </tr>
+                 <tr>
+                    <td>Amieur</td>
+                    <td class="p">Imed Eddine </td>
+                    <td ><div class="ckeckbox" onclick="checkmark6()"><p id="checkmark6" class="mark">X</p></div></td>
+                 </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+
+<div class="section">
+    <div id="my-qr-reader"></div>
+</div>
+<script src="https://unpkg.com/html5-qrcode"></script> 
+<script src="event.js"></script>
+<script src="index.js"></script>
+
+</html>
